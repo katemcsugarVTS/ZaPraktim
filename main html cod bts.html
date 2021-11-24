@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>BTS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bts logo.png" rel="icon" type="image/x-icon">
+
+</head>
+
+<style>
+    body {
+        scroll-behavior: smooth;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    nav {
+        background-color: rgba(243, 222, 222, 0.616);
+        padding: 5px 0px;
+        position: absolute;
+        width: auto;
+    }
+    
+    ul {
+        float: center;
+        text-align: center;
+    }
+    
+    li {
+        display: inline;
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        padding: 0px 20px;
+        color: rgb(0, 0, 0);
+    }
+    
+    a {
+        text-decoration: none;
+        color: black;
+        margin: auto;
+    }
+    
+    .main {
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 2% 0;
+    }
+    
+    .sekcija {
+        background: rgba(255, 255, 255, 0.8);
+        padding: 1% 5%;
+        border-radius: 10px;
+        margin: auto;
+        border: 1px solid gray;
+        padding: 30px;
+        text-align: justify;
+        line-height: 30px;
+    }
+    
+    span {
+        font-weight: bold;
+        font-style: italic;
+        color: purple;
+    }
+    
+    #linija {
+        height: 2px;
+        background-color: black;
+        width: 20%;
+        margin-left: 0px;
+    }
+    
+    .clanovi-wrap {
+        text-align: center;
+        margin: auto;
+    }
+    
+    .clanovi {
+        display: inline-block;
+        width: 30%;
+        padding: 10px;
+        background: lightblue;
+        margin: auto;
+    }
+    
+    .slika {
+        width: auto;
+        height: auto;
+        border-radius: 50%;
+        margin: auto;
+    }
+    
+    .header {
+        background: url('bts f.png') center fixed;
+        background-size: 100% 100%;
+        padding: 200px 100px;
+        text-align: center;
+    }
+    
+    .wrap {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 50px;
+        width: 50%;
+        background-color: rgba(255, 255, 255, 0.7);
+        margin-bottom: 50px;
+    }
+    
+    hr {
+        width: 30%;
+        height: 3px;
+        background-color: purple;
+        border: auto;
+        margin: auto;
+    }
+    
+    .button {
+        color: white;
+        letter-spacing: 2px;
+        font-weight: bold;
+        background-color: purple;
+        padding: 15px 30px;
+    }
+    
+    .button:hover {
+        transition: 0.5s ease;
+        padding: 20px 35px;
+        background-color: rgba(255, 0, 0, .3);
+    }
+    
+    .sek2 {
+        background: url(img/back.jpeg) center fixed;
+        background-size: 100% 100%;
+    }
+    
+    @media screen and (max-width: 800px) {
+        nav ul li {
+            width: 100%;
+        }
+        .card-item__bg {
+            width: 150px;
+            margin-left: auto;
+            margin-right: auto;
+            left: 0;
+            right: 0;
+            display: block;
+            position: relative;
+            margin: 30px auto;
+            transform: translate(0px, 50px);
+            z-index: 5;
+        }
+        .form {
+            background: #fff;
+            box-shadow: 0 30px 60px 0 rgba(90, 116, 148, 0.4);
+            border-radius: auto;
+            max-width: 480px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            left: 0;
+            right: 0;
+            position: absolute;
+            border-top: 5px solid #0e3721;
+            animation: bounce 1.5s infinite;
+        }
+         ::-webkit-input-placeholder {
+            font-size: 1.3em;
+        }
+        .title {
+            display: block;
+            font-family: sans-serif;
+            margin: 10px auto 5px;
+            width: 300px;
+        }
+        .termsConditions {
+            margin: 0 auto 5px 80px;
+        }
+        .pageTitle {
+            font-size: 2em;
+            font-weight: bold;
+        }
+        .secondaryTitle {
+            color: grey;
+        }
+        .name {
+            background-color: #ebebeb;
+            color: white;
+        }
+        .name:hover {
+            border-bottom: 5px solid #0e3721;
+            height: 30px;
+            width: 380px;
+            transition: ease 0.5s;
+        }
+        .email {
+            background-color: #ebebeb;
+            height: 2em;
+        }
+        .email:hover {
+            border-bottom: 5px solid #0e3721;
+            height: 30px;
+            width: 380px;
+            transition: ease 0.5s;
+        }
+        .message {
+            background-color: #ebebeb;
+            overflow: hidden;
+            height: 10rem;
+        }
+        .message:hover {
+            border-bottom: 5px solid #0e3721;
+            height: 12em;
+            width: 380px;
+            transition: ease 0.5s;
+        }
+        .formEntry {
+            display: block;
+            margin: 30px auto;
+            min-width: 300px;
+            padding: 10px;
+            border-radius: 2px;
+            border: none;
+            transition: all 0.5s ease 0s;
+        }
+        .submit {
+            width: 200px;
+            color: white;
+            background-color: #0e3721;
+            font-size: 20px;
+        }
+        .submit:hover {
+            box-shadow: 15px 15px 15px 5px rgba(78, 72, 77, 0.219);
+            transform: translateY(-3px);
+            width: 300px;
+            border-top: 5px solid #0e3750;
+            border-radius: 0%;
+        }
+        @keyframes bounce {
+            0% {
+                tranform: translate(0, 4px);
+            }
+            50% {
+                transform: translate(0, 8px);
+            }
+        }
+    }
+</style>
+
+<body>
+    <br>
+    <nav>
+        <ul>
+            <li><a href="https://kprofiles.com/bts-bangtan-boys-members-profile/">O bendu na engleskom</a></li>
+            <li><a href="bts f.png">Članovi</a></li>
+            <li>Mišljenje (ne funkcionise) </a>
+            </li>
+        </ul>
+    </nav>
+
+    <hr>
+
+    <header class="header">
+        <div class="wrap">
+            <h1>Upoznajte BTS</h1>
+            <hr>
+            <h2>Novu svetsku senzaciju</h2>
+        </div>
+    </header>
+
+    <div class="clanovi-wrap" class="sekcija">
+        <div class="clanovi">
+            <h2>Jimin</h2>
+            <img class="slika" src="JIMIN.jpg">
+            <h2>Jungkook</h2>
+            <img class="slika" src="JK.jpg">
+            <h2>V</h2>
+            <img class="slika" src="V.jpg">
+            <h3>Mladi</h3>
+        </div>
+
+        <div class="clanovi-wrap" class="sekcija">
+            <div class="clanovi">
+                <h2>RM</h2>
+                <img class="slika" src="RM.jpg">
+                <h2>J-Hope</h2>
+                <img class="slika" src="JHOPE.jpg">
+                <h2>Yoongi</h2>
+                <h3>Lepi</h3>
+                <img class="slika" src="SUGA.jpg">
+                <h2>Jin</h2>
+                <img class="slika" src="JIN.jpg">
+                <h3>Zgodni</h3>
+            </div>
+
+
+        </div>
+    </div>
+    </div>
+    </section>
+
+
+
+</body>
+
+</html>
